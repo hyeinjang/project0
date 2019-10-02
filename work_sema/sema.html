@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SeMA</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../work_sema/css/jquery-ui.css">
+    <link rel="stylesheet" href="../work_sema/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../work_sema/js/jquery-ui.js"></script>
+    <script src="https://platform.instagram.com/en_US/embeds.js"></script>
+    <script src="../work_sema/js/index.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav class="scroll">
+                <ul>
+                    <li><a href="#" data-content="전시">전시</a></li>
+                    <li><a href="#" data-content="교육·행사">교육·행사</a></li>
+                    <li><a href="#" data-content="SeMA소개">SeMA소개</a></li>
+                    <li><a href="#" data-content="소장품">소장품</a></li>
+                    <li><a href="#" data-content="소식·참여">소식·참여</a></li>
+                    <i class="fas fa-sort-up"></i>
+                </ul>
+                <div class="submenu">
+                    <div class="submenu-wrap">
+                        <ul>
+                            <li><a href="#">현재전시</a></li>
+                            <li><a href="#">예정전시</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">현재교육</a></li>
+                            <li><a href="#">예정교육</a></li>
+                            <li><a href="#">교육자료실</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">시설안내</a></li>
+                            <li><a href="#">조직·연혁</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">소장품검색</a></li>
+                            <li><a href="#">Collection 200</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">대관안내</a></li>
+                            <li><a href="#">SNS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="calendar">
+            <div class="calendar-date">
+                <div class="calendar-date-wrap">
+                    <img src="../work_sema/images/calendar/calendarHandler_long_l.png" alt="날짜변경아이콘 왼쪽화살표">
+                    <span id="m"></span>
+                    <span>/</span>
+                    <span id="dt"></span>
+                    <span id="d"></span>
+                    <i class="far fa-calendar-check"></i>
+                    <img src="../work_sema/images/calendar/calendarHandler_long_r.png" alt="날짜변경아이콘 오른쪽화살표">
+
+                </div>
+            </div>
+            <div class="calendar-loca">
+                <ul class="location">
+                    <li class="option-btn active">서소문본관</li>
+                    <li class="option-btn">북서울미술관</li>
+                    <li class="option-btn">남서울미술관</li>
+                </ul>
+            </div>
+            <div class="calendar-content" id="original">
+                <div class="calendar-content-top">
+                    <div class="time small-item">
+                        <div class="time-notice-wrap" id="original-mon">
+                            <div class="time-title small-item-title">본 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+                                <div class="time-txt kor">
+                                    오늘은<br> 휴관일입니다
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="original-weekday">
+                            <div class="time-title small-item-title">본 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+
+                                <div class="time-txt">
+                                    10:00 - 20:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="original-weekend">
+                            <div class="time-title small-item-title">본 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+
+                                <div class="time-txt">
+                                    10:00 - 19:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-item">
+                        <div class="exhibition-item-wrap">
+                            <div class="exhibition-item">
+                                <img src="../work_sema/images/calendar/exhibition/age.png" alt="에이징월드 포스터" data-default="../work_sema/images/calendar/exhibition/age.png" data-alt="../work_sema/images/calendar/exhibition/age_hover.png">
+                                <p class="exhibition-title">Will you still love me tomorrow?</p>
+                                <p class="exhibition-date">190827-191020</p>
+                                <div class="hover-desc">
+                                    <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 일반 15,000 청소년 13,000 아동 10,000</p>
+                                    <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 2시간</p>
+                                    <p><i class="fas fa-user"></i> <span>도슨트</span> 1회차-14:00 2회차-16:00</p>
+                                </div>
+                            </div>
+                            <div class="exhibition-item">
+                                <img src="../work_sema/images/calendar/exhibition/sidae.png" alt="시대유감 포스터" data-default="../work_sema/images/calendar/exhibition/sidae.png" data-alt="../work_sema/images/calendar/exhibition/sidae_hover.png">
+                                <p class="exhibition-title">가나아트 컬렉션 상설전 &lt; 시대유감 &gt;</p>
+                                <p class="exhibition-date">상설전시</p>
+                                <div class="hover-desc">
+                                    <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                    <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                    <p><i class="fas fa-user"></i> <span>도슨트</span> 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-content-bottom">
+                    <div class="big-item">
+                        <div class="exhibition-item-wrap">
+                            <div class="exhibition-item">
+                                <img src="../work_sema/images/calendar/exhibition/cheon.png" alt="천경자 상설전시 포스터" data-default="../work_sema/images/calendar/exhibition/cheon.png" data-alt="../work_sema/images/calendar/exhibition/cheon_hover.png">
+                                <p class="exhibition-title">영원한 나르시시스트, 천경자</p>
+                                <p class="exhibition-date">상설전시</p>
+                                <div class="hover-desc">
+                                    <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                    <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                    <p><i class="fas fa-user"></i> <span>도슨트</span> 1회차-12:00~12:40 2회차-14:00-14:40</p>
+                                </div>
+                            </div>
+                            <div class="exhibition-item">
+                                <img src="../work_sema/images/calendar/exhibition/woman.png" alt="여성가족재단 컬렉션 포스터" data-default="../work_sema/images/calendar/exhibition/woman.png" data-alt="../work_sema/images/calendar/exhibition/woman_hover.png">
+                                <p class="exhibition-title">서울시 여성가족재단 SeMA 컬렉션 라운지 4호</p>
+                                <p class="exhibition-date">상설전시</p>
+                                <div class="hover-desc">
+                                    <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                    <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                    <p><i class="fas fa-user"></i> <span>도슨트</span> -</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map small-item">
+                        <div class="map-title small-item-title">찾아오시는 길</div>
+                        <div class="map-content small-item-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="map-txt small-item-txt">
+                            <p>대중교통이용 및 주차안내</p>
+                            <p>서울 중구 덕수궁길61(서소문동)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-content" id="north">
+                <div class="calendar-content-top">
+                    <div class="time small-item">
+                        <div class="time-notice-wrap" id="north-mon">
+                            <div class="time-title small-item-title">북 오늘의 이용시간</div>
+                            <div class="time-txt kor">
+                                오늘은<br> 휴관일입니다
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="north-weekday">
+                            <div class="time-title small-item-title">북 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+                                <div class="time-txt">
+                                    10:00 - 20:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="north-weekend">
+                            <div class="time-title small-item-title">북 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+                                <div class="time-txt">
+                                    10:00 - 19:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-item">
+                        <div class="exhibition-item">
+                            <img src="../work_sema/images/calendar/exhibition/space.png" alt="유휴공간 프로젝트 포스터" data-default="../work_sema/images/calendar/exhibition/space.png" data-alt="../work_sema/images/calendar/exhibition/space_hover.png">
+                            <p class="exhibition-title bk_txt">유휴공간 프로젝트</p>
+                            <p class="exhibition-date bk_txt">190101-191231</p>
+                            <div class="hover-desc">
+                                <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                <p><i class="fas fa-user"></i> <span>도슨트</span> -</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="calendar-content-bottom">
+                    <div class="big-item">
+                        <div class="exhibition-item">
+                            <img src="../work_sema/images/calendar/exhibition/chaos.png" alt="소프트카오스 포스터" data-default="../work_sema/images/calendar/exhibition/chaos.png" data-alt="../work_sema/images/calendar/exhibition/chaos_hover.png">
+                            <p class="exhibition-title bk_txt">소프트 카오스 : 공간상상</p>
+                            <p class="exhibition-date bk_txt">190326-190922</p>
+                            <div class="hover-desc">
+                                <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                <p><i class="fas fa-user"></i> <span>도슨트</span> -</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="map small-item">
+                        <div class="map-title small-item-title">찾아오시는 길</div>
+                        <div class="map-content small-item-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="map-txt small-item-txt">
+                            <p>대중교통이용 및 주차안내</p>
+                            <p>서울 노원구 동일로 1238(중계동)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-content" id="south">
+                <div class="calendar-content-top">
+                    <div class="time small-item">
+                        <div class="time-notice-wrap" id="south-mon">
+                            <div class="time-title small-item-title">남 오늘의 이용시간</div>
+                            <div class="time-txt kor">
+                                오늘은<br> 휴관일입니다
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="south-weekday">
+                            <div class="time-title small-item-title">남 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+
+                                <div class="time-txt">
+                                    10:00 - 20:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                        <div class="time-notice-wrap" id="south-weekend">
+                            <div class="time-title small-item-title">남 오늘의 이용시간</div>
+                            <div class="time-content small-item-content">
+
+                                <div class="time-txt">
+                                    10:00 - 18:00
+                                </div>
+                            </div>
+                            <div class="time-txt small-item-txt">
+                                <p>* 관람종료 1시간 전까지 입장 가능</p>
+                                <p>* 매주 월요일 휴관</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-item">
+                        <div class="exhibition-item">
+                            <img src="../work_sema/images/calendar/exhibition/object.png" alt="불안한사물들 전시 포스터" data-default="../work_sema/images/calendar/exhibition/object.png" data-alt="../work_sema/images/calendar/exhibition/object_hover.png">
+                            <p class="exhibition-title bk_txt">불안한 사물들</p>
+                            <p class="exhibition-date bk_txt">190626-190922</p>
+                            <div class="hover-desc">
+                                <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                <p><i class="fas fa-user"></i> <span>도슨트</span> 14:00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="calendar-content-bottom">
+                    <div class="big-item">
+                        <div class="exhibition-item">
+                            <img src="../work_sema/images/calendar/exhibition/bel.png" alt="불안한사물들 전시 포스터" data-default="../work_sema/images/calendar/exhibition/bel.png" data-alt="../work_sema/images/calendar/exhibition/bel_hover.png">
+                            <p class="exhibition-title bk_txt">미술관이 된 구벨기에영사관</p>
+                            <p class="exhibition-date bk_txt">상설전시</p>
+                            <div class="hover-desc">
+                                <p><i class="fas fa-ticket-alt"></i> <span>관람료</span> 무료</p>
+                                <p><i class="fas fa-clock"></i> <span>예상소요시간</span> 약 1시간</p>
+                                <p><i class="fas fa-user"></i> <span>도슨트</span> 14:00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="map small-item">
+                        <div class="map-title small-item-title">찾아오시는 길</div>
+                        <div class="map-content small-item-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="map-txt small-item-txt">
+                            <p>대중교통이용 및 주차안내</p>
+                            <p>서울 관악구 남부순환로 2076(남현동)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-handler">
+            <img src="../work_sema/images/calendar/calendarHandler-l.png" alt="달력 컨텐츠 이동 좌측 화살표" class="handler">
+            <img src="../work_sema/images/calendar/calendarHandler-r.png" alt="달력 컨텐츠 이동 좌측 화살표" class="handler">
+        </div>
+
+    </div>
+    <div class="info">
+        <div class="title-section">
+            <h2 class="section-title">관람가이드</h2>
+            <h3 class="section-subtitle">미술관, 어렵지 않아요</h3>
+        </div>
+        <div class="info-icon-wrap">
+            <img src="../work_sema/images/info/info-icon1.png" alt="동선안내">
+            <div class="info-text">전시실 바닥의 화살표, 또는 벽면의 숫자는 편안한 관람을 위한 길잡이가 되어줄 수 있어요.</div>
+        </div>
+        <div class="info-icon-wrap">
+            <img src="../work_sema/images/info/info-icon2.png" alt="관람시 금지행동">
+            <div class="info-text">쾌적한 관람과 작품 보호를 위해 사진촬영, 음식물 및 애완동물 반입은 금지! 소근소근 매너모드를 지켜주세요.</div>
+        </div>
+        <div class="info-icon-wrap">
+            <img src="../work_sema/images/info/info-icon3.png" alt="오디오가이드">
+            <div class="info-text">전시실 앞 안내데스크에서 오디오가이드를 대여하면 나만의 가이드와 함께 전시를 관람할 수 있어요. [신분증필요]</div>
+        </div>
+        <div class="info-icon-wrap">
+            <img src="../work_sema/images/info/info-icon4.png" alt="도슨트이용안내">
+            <div class="info-text"> 도슨트 시간에 맞추어 전시실에 입장해보세요. 도슨트의 전문적인 해설은 관람을 보다 풍부하게 만들어줍니다.</div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="event-wrap">
+            <img src="../work_sema/images/event/event-banner1.png" alt="sema 야간개장 이벤트배너1">
+            <img src="../work_sema/images/event/event-banner2.png" alt="sema 야간개장 이벤트배너2">
+            <img src="../work_sema/images/event/event-banner3.png" alt="sema 야간개장 이벤트배너3">
+            <img src="../work_sema/images/event/event-banner4.png" alt="sema 야간개장 이벤트배너4">
+        </div>
+    </div>
+    <div class="edu">
+        <div class="edu-wrap">
+            <div class="title-section">
+                <h2 class="section-title">교육 &amp; 행사</h2>
+                <h3 class="section-subtitle">배우고 느끼고 창작하는 미술의 즐거움</h3>
+            </div>
+            <div class="edu-content-section">
+                <div class="edu-state">
+                    <ul>
+                        <li class="option-btn active" data-value="recruiting">모집중<span class="active"></span></li>
+                        <li class="option-btn" data-value="proceeding">진행중<span></span></li>
+                    </ul>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-content-show">
+                        <div class="edu-content-wrap" id="recruiting">
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/edu_drawing.png" alt="드로잉클래스 모집"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">드로잉 워크숍: 눈, 코, 입</p>
+                                    <p>교육일시 : 2019.06.26 18:00~20:30</p>
+                                    <p>모집기간 : 2019.06.12 - 2019.06.20</p>
+                                    <p>장소 : 서울시립미술관 서소문본관</p>
+                                    <p>신청인원 <span>12</span><span>/</span><span>15</span></p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/hana_award.png" alt="하나평론상 공모"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">2019 SeMA-하나 평론상 공모</p>
+                                    <p>행사기간 : 2019.06.03 -
+                                        2019.08.25 </p>
+                                    <p>신청기간 : 2019.08.01 -
+                                        2019.08.25</p>
+                                    <p>장소 : 서울시립미술관 서소문본관</p>
+                                    <p>응모하기</p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/edu-lunchbox.png" alt="예술가의 런치박스"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">예술가의 런치박스</p>
+                                    <p>교육일시 : 2019.06.25 - 2019.7.30</p>
+                                    <p>모집기간 : 2019.06.12 - 2019.06.20</p>
+                                    <p>장소 : 서울시립미술관 서소문본관</p>
+                                    <p>신청인원 <span>17</span><span>/</span><span>20</span></p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/softchaos.png" alt="소프트 카오스: 공간 상상전 연계 초등학생 가족 프로그램"></div>
+                                <div class="edu-item-text addtxt">
+                                    <p class="edu-title">도화지를 뚫고나온 드로잉</p>
+                                    <p>소프트 카오스: 공간 상상전 연계 초등학생 가족 프로그램</p>
+                                    <p>교육일시 : 2019.06.29 10:00 - 12:00</p>
+                                    <p>모집기간 : 2019.06.05 - 2019.06.20</p>
+                                    <p>장소 : 북서울미술관 B1 스튜디오1</p>
+                                    <p>신청인원 <span>3</span><span>/</span><span>5</span></p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/softchaos2.png" alt="소프트 카오스: 공간 상상전 연계 특수학급 프로그램"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">공간과의 공감</p>
+                                    <!--                                   <p>소프트 카오스: 공간 상상전 연계 초등학생 가족 프로그램</p>-->
+                                    <p>교육일시 : 2019.06.25 10:00 - 12:00</p>
+                                    <p>모집기간 : 2019.06.05 - 2019.06.20</p>
+                                    <p>장소 : 북서울미술관 B1 스튜디오1</p>
+                                    <p>신청인원 <span>8</span><span>/</span><span>15</span></p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/mirae.png" alt="안은미래전 연계 인문학 강연 및 토크"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">&lt;안은미야&gt; 인문학 강연 및 토크</p>
+                                    <p>교육일시 : 2019.07.06 - 2019.09.28</p>
+                                    <p>모집기간 : 2019.06.14 - 2019.09.23</p>
+                                    <p>장소 : 서소문본관 B1층 세마홀</p>
+                                    <p>신청인원 <span>4</span><span>/</span><span>30</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edu-content-wrap" id="proceeding">
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/park.png" alt="조각공원 탐험"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">[초등] 떠나요! 조각공원 탐험</p>
+                                    <p>교육일시 : 2019.04.09 - 2019.06.28</p>
+                                    <p>모집기간 : 2019.02.13 - 2019.03.15</p>
+                                    <p>장소 : 서소문본관 B1 2강의실</p>
+                                    <p>자세히</p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item"><img src="../work_sema/images/edu/curator.png" alt="시민큐레이터 양성교육"></div>
+                                <div class="edu-item-text">
+                                    <p class="edu-title">2019 시민 큐레이터 양성교육</p>
+                                    <p>교육일시 : 2019-06-03 ~ 2019-07-15</p>
+                                    <p>모집기간 : 2019-05-04 - 2019-05-13</p>
+                                    <p>장소 : 서소문본관 B1층 세마홀</p>
+                                    <p>자세히</p>
+                                </div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item">진행 교육행사3</div>
+                                <div class="edu-item-text">설명</div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item">진행 교육행사4</div>
+                                <div class="edu-item-text">설명</div>
+                            </div>
+                            <div class="edu-item-wrap">
+                                <div class="edu-item">진행 교육행사5</div>
+                                <div class="edu-item-text">설명</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-handler">
+                    <img src="../work_sema/images/calendar/calendarHandler-l.png" alt="교육행사 컨텐츠 이동 좌측 화살표" class="handler">
+                    <img src="../work_sema/images/calendar/calendarHandler-r.png" alt="교육행사 컨텐츠 이동 좌측 화살표" class="handler">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro-wrap">
+            <div class="title-section">
+                <h2 class="section-title">SeMA 소개</h2>
+                <h3 class="section-subtitle">세 가지 색으로 만나는 서울시립미술관</h3>
+            </div>
+            <div class="intro-content-section">
+                <span class="intro-mission">" 여럿이 만드는 미래, 모두가 연결된 미술관 "</span>
+                <div class="intro-branch">
+                    <h4 class="intro-branch-title">서소문본관</h4>
+                    <div class="intro-branch-img">
+                        <img src="../work_sema/images/intro/original_thumb.png" alt="서소문본관 썸네일">
+                    </div>
+                    <p class="intro-branch-txt">
+                        전문성과 대중성을 아우르는 열린 문화예술공간
+                    </p>
+                    <p class="address">서울 중구 덕수궁길 61 (서소문동)</p>
+                </div>
+                <div class="modal" id="intro-original">
+                    <p class="modal-header">서소문본관
+                        <span>&times;</span>
+                    </p>
+                    <div class="modal-content">
+                        <div class="modal-content-top">
+                            <video controls loop>
+                                <source src="../work_sema/images/intro/videos/original_intro.mp4" type="video/mp4">
+                            </video>
+                            <div class="modal-info">
+                                <div class="modal-time">
+                                    <p class="modal-info-title"><i class="fas fa-clock"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>평일 10AM~8PM</p>
+                                        <p>주말·공휴일 10 AM~ 7PM</p>
+                                        <p>매주 월요일 정기휴관</p>
+                                    </div>
+                                </div>
+                                <div class="modal-location">
+                                    <p class="modal-info-title"><i class="fas fa-map-marker-alt contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>서울 중구 덕수궁길<br>61(서소문동)</p>
+                                    </div>
+                                </div>
+                                <div class="modal-contact">
+                                    <p class="modal-info-title"><i class="fas fa-phone contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>(02)2124-8800(ARS)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-desc">
+                            <p>서울시립미술관은 ‘여럿이 만드는 미래, 모두가 연결된 미술관’을 지향하며 <br>세계적인 미술관으로 도약하고 있습니다.</p>
+                            <p>아시아의 중심도시인 대한민국 수도 서울의 대표 미술관으로서 세계성과 지역성, 전문성과 대중성을 아우르는 다양한 기획전과 특별전을 개최하고, 맞춤형 교육 및 국제교류 프로그램 등을 운영합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-branch">
+                    <h4 class="intro-branch-title">북서울미술관</h4>
+                    <div class="intro-branch-img">
+                        <img src="../work_sema/images/intro/north_thumb.png" alt="북서울미술관 썸네일">
+                    </div>
+                    <p class="intro-branch-txt">
+                        사람과 자연, 예술이 만나는 친환경 공공미술 컴플렉스
+                    </p>
+                    <p class="address">서울 노원구 동일로 1238 (중계동)</p>
+                </div>
+                <div class="modal" id="intro-north">
+                    <p class="modal-header">북서울미술관
+                        <span>&times;</span>
+                    </p>
+                    <div class="modal-content">
+                        <div class="modal-content-top">
+                            <video controls class="north">
+                                <source src="../work_sema/images/intro/videos/north_intro.mp4" type="video/mp4">
+                            </video>
+                            <div class="modal-info">
+                                <div class="modal-time">
+                                    <p class="modal-info-title"><i class="fas fa-clock"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>평일 10AM~8PM</p>
+                                        <p>주말·공휴일 10AM~ 7PM</p>
+                                        <p>매주 월요일 정기휴관</p>
+                                    </div>
+                                </div>
+                                <div class="modal-location">
+                                    <p class="modal-info-title"><i class="fas fa-map-marker-alt contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>서울 노원구 동일로<br>1238(중계동)</p>
+                                    </div>
+                                </div>
+                                <div class="modal-contact">
+                                    <p class="modal-info-title"><i class="fas fa-phone contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>(02)2124-5248~9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-desc">
+                            <p>서울시립 북서울미술관은 미술관과 공원이 만나고, 예술이 사람 자연과 함께 어우러지는<br>문화 창작의 공간이자 소통의 공간입니다.</p>
+                            <p>‘갈대언덕’에서 연유한 노원이라는 지명을 살려 공원 속 작은 동산 위에 세워진 북서울미술관은 공원을 산책하며 자연스럽게 미술관과 가까워질 수 있도록 산책로와 미술관 출입구를 연결한 개방형 미술관입니다.<br>
+                                시민들의 일상 속에 문화의 향기가 배어들 수 있도록 모두가 보고, 느끼고, 체험하고, 즐기며, 함께 할 수 있는 지역문화의 거점이 되겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-branch">
+                    <h4 class="intro-branch-title">남서울미술관</h4>
+                    <div class="intro-branch-img">
+                        <img src="../work_sema/images/intro/south_thumb.png" alt="남서울미술관 썸네일">
+                    </div>
+                    <p class="intro-branch-txt">
+                        근대의 역사를 간직한 디자인·생활공예 전문 미술관
+                    </p>
+                    <p class="address">서울 관악구 남부순환로 2076 (남현동)</p>
+                </div>
+                <div class="modal" id="intro-south">
+                    <p class="modal-header">남서울미술관
+                        <span>&times;</span>
+                    </p>
+                    <div class="modal-content">
+                        <div class="modal-content-top">
+                            <video controls loop>
+                                <source src="../work_sema/images/intro/videos/south_intro.mp4" type="video/mp4">
+                            </video>
+                            <div class="modal-info">
+                                <div class="modal-time">
+                                    <p class="modal-info-title"><i class="fas fa-clock"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>평일 10AM~8PM</p>
+                                        <p>주말·공휴일 10 AM~6PM</p>
+                                        <p>매주 월요일 정기휴관</p>
+                                    </div>
+                                </div>
+                                <div class="modal-location">
+                                    <p class="modal-info-title"><i class="fas fa-map-marker-alt contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>서울 관악구 남부순환로<br>2076(남현동)</p>
+                                    </div>
+                                </div>
+                                <div class="modal-contact">
+                                    <p class="modal-info-title"><i class="fas fa-phone contact-icon"></i></p>
+                                    <div class="modal-info-content">
+                                        <p>(02)598 -6246~7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-desc">
+                            <p>서울시립 남서울미술관은 연중 무료로 운영되는 다채롭고 수준높은 기획전시 등으로<br>도심 속에 예술의 향기를 느낄 수 있는 친근한 지역 문화 공간입니다.</p>
+                            <p>대한제국(1897 ~ 1910) 주재 벨기에 영사관 건물로서, 한옥 밀집 지역인 회현동에 그 부지를 마련하고 지하1층, 지상2층의 규모로 1905년 준공되었으나 이후, 도심 재개발 사업으로 인하여 1983년에 지금의 남현동으로 이전, 문화재 관리국 (현 문화재청) 전문 위원들의 도움으로 복원되었습니다.<br>이후 1970년 상업은행(현 우리은행)이 불하받아 그 소유로 있던 중, 2004년 5월 우리은행이 기업의 문화예술지원사업의 일환으로 서울특별시에 무상임대 하여 서울시는 이와 같은 취지를 살려 공공미술관으로 새롭게 꾸며 시민을 위한 문화공간으로 조성, 2004년 9월 서울시립미술관 남서울미술관으로 사용하게 되었습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-branch-indicator">
+                    <span class="location-icon">서</span>
+                    <span class="location-icon">북</span>
+                    <span class="location-icon">남</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sns">
+        <div class="sns-wrap">
+            <div class="title-section">
+                <h2 class="section-title"># 서울시립미술관</h2>
+                <h3 class="section-subtitle">누구보다 빠르게 SeMA의 새소식을 확인하세요!</h3>
+            </div>
+            <div class="sns-content-section">
+                <div class="sns-icon-wrap">
+                    <a href="https://www.instagram.com/seoulmuseumofart/?hl=ko" title="공식 인스타그램 바로가기" target="_blank"><img src="../work_sema/images/sns/btn-insta-bk.png" alt="인스타그램 링크 아이콘" date-hover="../work_sema/images/sns/btn-insta-cl.png" date-default="../work_sema/images/sns/btn-insta-bk.png"></a>
+                    <a href="https://twitter.com/seoulsema" title="공식 트위터 바로가기" target="_blank"><img src="../work_sema/images/sns/btn-twitter-bk.png" alt="트위터 링크 아이콘" date-hover="../work_sema/images/sns/btn-twitter-cl.png" date-default="../work_sema/images/sns/btn-twitter-bk.png"></a>
+                    <a href="https://www.youtube.com/user/SeoulMuseumofArt" title="공식 유튜브 바로가기" target="_blank"><img src="../work_sema/images/sns/btn-youtube-bk.png" alt="유튜브 링크 아이콘" date-hover="../work_sema/images/sns/btn-youtube-cl.png" date-default="../work_sema/images/sns/btn-youtube-bk.png"></a>
+                    <a href="https://www.facebook.com/SeoulMuseumofArt.kr/?rf=120321334680549" title="공식 페이스북 바로가기" target="_blank"><img src="../work_sema/images/sns/btn-fb-bk.png" alt="페이스북 링크 아이콘" date-hover="../work_sema/images/sns/btn-fb-cl.png" date-default="../work_sema/images/sns/btn-fb-bk.png"></a>
+                </div>
+                <div class="sns-content-wrap">
+                    <a target="_blank" href="https://www.instagram.com/p/Byrid1glax4/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item1.jpg" alt="인스타그램 게시물-한국근대명화전 '근대의꿈'전시 홍보"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/BvyHeXggfTE/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item11.jpg" alt="인스타그램 게시물-북서울미술관 소프트카오스 전 체험활동 홍보"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/BwoV1i0AD9W/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item4.jpg" alt="인스타그램 게시물-데이비드 호크니전 홍보"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/BxJ3tAXgXEB/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item5.jpg" alt="인스타그램 게시물-기념 에코백 증정 이벤트"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/ByT1tE_lRzN/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item_2.jpg" alt="인스타그램 게시물-신진미술인 전명은 개인전"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/Bu5i0QUAmff/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item6.jpg" alt="인스타그램 게시물-시민큐레이터 교육 공모"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/Buvc0KgAVFP/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item_3.jpg" alt="인스타그램 게시물-세계여성의날 기념물"></a>
+                    <a target="_blank" href="https://www.instagram.com/p/Bwl6vy8gKU-/" title="게시물 보러가기"><img src="../work_sema/images/sns/sns_item9.jpg" alt="인스타그램 게시물-데이비드 호크니전 관람"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </aside>
+    <aside class="group-visit">
+        단체관람신청
+    </aside>
+    <aside class="group-visit-form">
+        <span class="close-btn">&times;</span>
+        <div class="form-header">단체관람 신청하기</div>
+        <div class="form-content">
+            <span>방문날짜</span>
+            <input type="text" id="date" placeholder=" 방문날짜 선택"><br>
+            <span>장소</span>
+            <select name="장소">
+                <option value="default" disabled selected>장소선택</option>
+                <option value="서소문본관">서소문본관</option>
+                <option value="북서울미술관">북서울미술관</option>
+                <option value="남서울미술관">남서울미술관</option>
+            </select><br>
+            <span>전시명</span>
+            <select name="전시명">
+                <option value="default" disabled selected>전시명 선택</option>
+                <option value="데이비드호크니">데이비드 호크니전</option>
+                <option value="2018 SeMA 신소장품<<멀티액세스 4913>>">2018 SeMA 신소장품&gt;&gt;멀티액세스 4913&lt;&lt;</option>
+                <option value="가나아트 컬렉션 상설전 <시대유감>">가나아트 컬렉션 상설전 &gt;시대유감&lt;</option>
+                <option value="영원한 나르시스트 천경자 상설전">영원한 나르시스트 천경자 상설전</option>
+            </select><br>
+            <span>방문시간</span>
+            <select name="시간">
+                <option value="default" disabled selected>시간 선택</option>
+                <option value="10:00-11:00">10:00~11:00</option>
+                <option value="11:00-12:00">11:00~12:00</option>
+                <option value="13:00-14:00">13:00~14:00</option>
+                <option value="14:00-15:00">14:00~15:00</option>
+                <option value="15:00-16:00">15:00~16:00</option>
+                <option value="16:00-17:00">16:00~17:00</option>
+            </select>
+
+            <div class="input-wrap">
+                <input type="text" placeholder=" 방문자 성함" data-default=" 방문자 성함">
+                <label for="name">방문자 성함</label>
+            </div>
+            <div class="input-wrap">
+                <input type="text" placeholder=" 연락처" data-default=" 연락처">
+                <label for="phone">연락처</label>
+            </div>
+
+
+        </div>
+        <button class="submit" value="신청서 제출">신청서 제출</button>
+    </aside>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-top-l">
+                <div class="small-logo">
+                </div>
+                <div class="contact">
+                    <p><i class="fas fa-phone contact-icon"></i><span>02-2124-8800</span></p>
+                    <p><i class="fas fa-map-marker-alt contact-icon"></i><span>서울특별시 중구 덕수궁길 61</span></p>
+                    <p><i class="fas fa-envelope contact-icon"></i><span>sema@seoul.go.kr</span></p>
+                </div>
+
+            </div>
+            <div class="footer-bottom-l">
+                <span>© 2019 Seoul Museum of Art All rights reserved</span>
+            </div>
+            <div class="footer-bottom-r">
+                <a href=""><span>개인정보처리방침</span></a>
+                <a href=""><span>사이트맵</span></a>
+            </div>
+        </div>
+    </footer>
+</body></html>
